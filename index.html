@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rana Alsaggaf" />
+    <title>Lab 7</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="bar">
+            <div class="brand">Unsplash API</div>
+            <label class="sr-only" for="query">Search</label>
+            <input id="query" type="text" placeholder="Type a keyword… e.g., Makkah, cats, mountains" value="Makkah" />
+            <button id="btn-xhr" title="XMLHttpRequest">Search using XHR</button>
+            <button id="btn-fetch" title="fetch + promises">Search using fetch (promises)</button>
+            <button id="btn-async" title="fetch + async/await">Search using fetch (async/await)</button>
+        </div>
+    </header>
+
+    <main>
+        <div id="status" class="status">Try a search! You can use XHR, fetch+promises, or async/await.</div>
+        <section id="grid" class="grid" aria-live="polite"></section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
